@@ -81,6 +81,10 @@
   #undef _ENDSTOP_IS_ANY
 #endif
 
+#define NEEDS_X_MINMAX 1
+#define NEEDS_Y_MINMAX 1
+#define NEEDS_Z_MINMAX 1
+
 //
 // Limit Switches
 //
@@ -235,9 +239,9 @@
 //
 // Heaters / Fans
 //
-#define HEATER_BED_PIN                      PA1   // Hotbed
-#define HEATER_0_PIN                        PA2   // Heater0
-#define HEATER_1_PIN                        PA3   // Heater1
+#define HEATER_BED_PIN                      PA2   // Hotbed
+#define HEATER_0_PIN                        PA3   // Heater0
+#define HEATER_1_PIN                        PA0   // Heater1
 #define HEATER_2_PIN                        PB10  // Heater2
 #define HEATER_3_PIN                        PB11  // Heater3
 
